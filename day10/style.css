@@ -1,0 +1,46 @@
+.head {position: absolute;top: 100px;left: 50%;}
+.tit_main {position: absolute;left: 50%;margin-left: -116px;top: -50%;overflow: hidden;width: 323px;height: 148px;background-image: url('/txt_title.png') 0 0 no-repeat;}
+
+
+.gnb {width: 1161px;height: 60px;margin: 0 auto;}
+.gnb li {float: left;margin-right: 50px;}
+.gnb li:last-child {margin-right: 0;}
+.link_nav {display: block;width: 120px;height: 69px;font-size: 0;text-indent: -9999px;overflow: hidden;}
+ 
+.cont_upper {
+    overflow: hidden;
+    height: 800px;
+    background: url('/bg_sky.png') no-repeat;
+    background-size: contain;
+
+}
+/*cont_upper의 가장 마지막 가상요소*/
+.cont_upper::after {
+    display: block;
+    content: '';
+    background: url('/fence_upper.png') 0 0 no-repeat;
+    height: 146px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; /*양쪽 끝에서 늘어나야 하므로 left, right 모두 0*/
+    z-index: 10;
+}
+.char_lambs {
+    position: absolute;
+    top: 300px;
+    left: -110px;
+}
+.bg_tree {
+    position: absolute;
+    top: 300px;
+    left: -110px;
+}
+.char_hog {
+    position: absolute;
+    top: 400px;
+    right: 240px;
+}
+.box_item {
+    
+}
